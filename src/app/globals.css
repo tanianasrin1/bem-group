@@ -42,8 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 400px;
+    height: 600px;
   }
   
   .slide {
@@ -84,7 +83,7 @@
   }
   
   .indicator {
-    background-color: white;
+    background-color: rgb(7, 36, 165);
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 100%;

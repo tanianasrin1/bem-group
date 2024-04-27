@@ -1,9 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export default function Carousel({data}) {
   const [slide, setSlide] = useState(0);
+
+  const autoplayInterval = 3000; 
 
   const nextSlide = () => {
     setSlide(slide === data.length - 1 ? 0 : slide + 1);
@@ -12,9 +14,19 @@ export default function Carousel({data}) {
   const prevSlide = () => {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
+
+  const handleAutoplay = () => {
+    nextSlide();
+  };
+
+  useEffect(() => {
+    const autoplayTimer = setInterval(handleAutoplay, autoplayInterval);
+    return () => clearInterval(autoplayTimer);
+  }, [slide]);
+  
   return (
     <div className="container-sk lg:py-20 md:py-16 py-5">
-      <div className="carousel">
+      <div className="carousel w-full">
         <BsArrowLeftCircleFill
           onClick={prevSlide}
           className="arrow arrow-left"
