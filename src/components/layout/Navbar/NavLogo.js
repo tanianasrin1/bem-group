@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function NavLogo() {
   return (
-    <div>
+    <Link href="/">
       <Image
           src="/logo.png"
           alt="Logo"
@@ -12,6 +13,6 @@ export default function NavLogo() {
           height={150}
           priority
         />
-    </div>
+    </Link>
   )
 }
