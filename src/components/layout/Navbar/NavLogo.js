@@ -7,7 +7,7 @@ export default function NavLogo() {
       <Image
           src="/logo.png"
           alt="Logo"
-          className="mx-auto pointer-events-none select-none"
+          className="my-auto"
           width={150}
           height={150}
           priority
