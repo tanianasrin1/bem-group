@@ -6,12 +6,12 @@ import React from "react";
 export default function () {
   const pathname = usePathname();
   return (
-    <div className="w-8/12 lg:flex items-center justify-center gap-x-[25px] text-white font-Barlow text-lg  leading-5 tracking-[1%] hidden ">
+    <div className="lg:flex items-center justify-center gap-x-[25px] text-white font-Barlow text-lg  leading-5 tracking-[1%] hidden ">
       <div className="">
         <Link
           className={`${
             pathname === "/" && " font-semibold"
-          } text-lg   hover:text-primary `}
+          } text-lg  `}
           href="/"
         >
           Home
@@ -22,10 +22,10 @@ export default function () {
         <Link
           className={`${
             pathname === "/template" && " font-semibold"
-          } text-lg   hover:text-primary `}
+          } text-lg`}
           href="/template"
         >
-          Template
+          Preview Template
         </Link>
       </div>
     </div>

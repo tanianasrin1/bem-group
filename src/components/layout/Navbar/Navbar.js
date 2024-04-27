@@ -8,6 +8,7 @@ export default function Navbar() {
       <div className="container-sk flex items-center justify-between relative">
         <NavLogo />
         <Links />
+        
       </div>
     </div>
   );
