@@ -25,7 +25,8 @@ export default function Carousel({data}) {
   }, [slide]);
   
   return (
-    <div className="container-sk lg:py-20 md:py-16 py-5">
+    <div className="container-sk lg:py-16 md:py-12 py-5">
+      <h1 className="text-center font-semibold text-black mb-10 text-3xl">Carousel Slider</h1>
       <div className="carousel w-full">
         <BsArrowLeftCircleFill
           onClick={prevSlide}

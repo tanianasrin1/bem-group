@@ -44,7 +44,7 @@ export default function Template({ data }) {
 
   return (
     <div className="container-sk lg:py-20 md:py-16 py-5">
-      <h2 className="text-center font-semibold text-black/80 my-10 text-4xl">
+      <h2 className="text-center font-semibold text-black mb-10 text-3xl">
         {data?.name}
       </h2>
 
