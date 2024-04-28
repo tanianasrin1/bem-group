@@ -60,7 +60,6 @@ export default function LoginPage() {
 
   const validatePassword = (password) => {
     const isPasswordIsValid = passwordValidator(password);
-    console.log("isPasswordIsValid", isPasswordIsValid);
     if (isPasswordIsValid !== true) {
       setErrors({ ...errors, password: isPasswordIsValid });
     } else {

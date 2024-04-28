@@ -7,8 +7,6 @@ export default function Page() {
   const [resData, setResData] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log("temData", resData);
-
   useEffect(() => {
     setIsLoading(true);
     fetch(process.env.NEXT_PUBLIC_GET_TEMPLATE_URL, {
